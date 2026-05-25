@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+html{
+    scroll-behavior:smooth ;
+    width:100% ;
+
+}
+
+body{
+    background: #000000;
+    padding:6.0rem ,2.3rem, 6.6rem;
+    font-size: 1.5rem;
+    color:white;
+    font-family: Arial;
+    font-weight: normal;
+    width: 100%;
+
+}
+
+:root{ 
+    font-size: 62.5%;
+
+}
+
+
+/*Home section*/
+
+header{
+    background-color: #151921;
+    box-shadow: 0 4px 30px rgba(1, 7, 92, 0.678);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    z-index: 1;
+    width: 100%;
+}
+
+
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.0rem;
+gap: 2.0rem;
+justify-content: center;
+list-style: none;
+text-decoration: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 1.0rem;
+  color: white;
+  transition: 0.3s;
+
+}
+
+ .logo{
+margin-right: auto;
+margin-top: 4.0rem;
+margin-left: 5.0rem;
+  font-size: 3.0rem;
+  font-family: Arial;
+  font: normal;
+  color: white;
+}
+
+span{
+    color: #00D1FF;
+}
+
+
+h1{
+    font-size: 6.0rem;
+    justify-content: center;
+    text-align: center;
+     padding-top: 3.0rem ;
+}
+
+h2{
+        justify-content: center;
+    text-align: center;
+     padding-top: 3.0rem ;
+     font-size: 3.0rem;
+    justify-content: left;
+    margin-top: 3.0rem;
+    
+}
+
+section{
+    padding: 20.0rem 1%;
+    border-bottom: 1px solid rgb(0, 102, 255) ;
+    flex: 1;
+}
+
+#content_paragraph{
+    text-align: center;
+    padding-top:2.0rem ;
+}
+
+/*About me*/
+#about_me {
+    align-items: center;
+    justify-content: space-around;
+    min-height: 50vh;
+    display: flexbox;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(image/esmenio.jpg);
+    padding-bottom: 20.0rem;
+    padding-top:20.0rem ;
+    max-height: 20.0rem;
+}
+
+#title_about{
+    margin-top: -20.0rem;
+    margin-bottom:20.0rem ;
+}
+
+.paragraph_about{
+    font-size: 2.0rem;
+    margin-top: -20.0rem;
+    text-align: center;
+
+}
+
+/* habilidades*/
+#Skill{
+    margin: 0 auto;
+    display: flex;
+
+}
+.description_skills {
+    position: relative;
+    backdrop-filter:blur(10px) ;
+  border: 1px solid blue;
+  margin-top:20.0rem ;
+  border-radius: 1.5rem;
+  padding: 2.0rem;
+  color: rgb(255, 255, 255);
+  width: 40.0rem;
+  min-width: 25.0rem;
+  padding: 2.0rem 3.0rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  top: 50px;
+  bottom: 50px;
+  transform: (translate(-50px,-50px));
+  height: 25vh;
+   box-shadow: 0 4px 30px rgba(0, 17, 255, 0.678);
+  
+}
+
+
+.description_skills p{
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 0.1rem;
+    display: inline-flex;
+    margin: 0.5rem;
+    padding: 20px 20px;
+    border: #00D1FF solid 1px;
+    border-radius: 2.0rem;
+    background-color: rgb(0, 53, 88);
+    font-size: 1.6rem;
+   
+}
+
+#Projects h2 {
+    margin-bottom: 50px;
+}
+
+#Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Projects .projects-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.card_project{
+
+    backdrop-filter:blur(10px) ;
+  border: 1px solid blue;
+
+  border-radius: 1.5rem;
+  padding: 2.0rem;
+  color: rgb(255, 255, 255);
+  width: 20.0rem;
+  padding: 2.0rem 3.0rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+   box-shadow: 0 4px 30px rgba(0, 17, 255, 0.678);
+   margin-right: 10px;
+  
+}
+
+/*Formation*/
+
+
+@media(max-width: 780px){
+
+    /*
+    header nav ul {
+        visibility: hidden;
+        display: none;
+    }
+*/
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 10px;
+
+    }
+
+    header .logo {
+        margin: auto;
+    }
+}
+
+@media(max-width: 530px) {
+    header nav ul {
+        grid-column: auto;
+    }
+}
+
+@media(max-widht:800px){
+    .paragraph_about{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width: 810px) {
+    #Skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .description_skills {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(max-width: 1603px) {
+
+    .projects-area {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width:730px){
+    body{
+        width: 100%;
+
+    }
+}
+
+@media(max-widht:500px){
+    
+.card_project .card_project{
+        display: block;
+        
+    }
+
+}
