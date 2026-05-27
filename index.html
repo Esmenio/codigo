@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Portfólio profissional de Esmenio Vieira - Desenvolvedor Full-Stack">
-    <meta name="keywords" content="desenvolvedor, full-stack, Angola, programador, portfolio">
+    <meta name="description" content="Portfólio profissional de Esmenio Vieira - Desenvolvedor Full-Stack especializado em React, Java e Node.js">
+    <meta name="keywords" content="desenvolvedor, full-stack, Angola, programador, portfolio, React, Java, Node.js">
     <meta name="author" content="Esmenio Vieira">
+    <meta name="theme-color" content="#000000">
     <title>Esmenio Vieira | Desenvolvedor Full-Stack</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -16,36 +16,36 @@
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
+    <!-- Header/Navigation -->
     <header>
         <div class="logo">
-            <a href="#Home"><span class="logo-bracket">&lt;</span>EV<span class="logo-bracket">/&gt;</span></a>
+            <a href="#home" aria-label="Voltar ao início"><span class="logo-bracket">&lt;</span>EV<span class="logo-bracket">/&gt;</span></a>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#Home" class="nav-link active"><i class="fas fa-home"></i> Início</a></li>
-                <li><a href="#about_me" class="nav-link"><i class="fas fa-user"></i> Sobre</a></li>
-                <li><a href="#Skill" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#Formation" class="nav-link"><i class="fas fa-graduation-cap"></i> Formação</a></li>
-                <li><a href="#Projects" class="nav-link"><i class="fas fa-folder-open"></i> Projetos</a></li>
-                <li><a href="#collab" class="nav-link"><i class="fas fa-handshake"></i> Colab</a></li>
-                <li><a href="#Find_Me" class="nav-link"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> <span>Início</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>Sobre</span></a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> <span>Skills</span></a></li>
+                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> <span>Educação</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i> <span>Projetos</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Contato</span></a></li>
             </ul>
         </nav>
-        <div class="menu-toggle">
+        <button class="menu-toggle" aria-label="Menu móvel" aria-expanded="false">
             <i class="fas fa-bars"></i>
-        </div>
+        </button>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="Home">
+    <section class="hero" id="home">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
+        <div class="container hero-content">
             <div class="hero-text">
                 <div class="hero-badge">
-                    <i class="fas fa-code"></i> Objectivo: Ser um Dev Full-Stack
+                    <i class="fas fa-code"></i> Objetivo: Ser um Dev Full-Stack
                 </div>
                 <h1 class="glow-text">
-                    <span ></span> Olá, eu sou<br>
+                    Olá, eu sou<br>
                     <span class="name-highlight">Esmenio Vieira</span>
                 </h1>
                 <div class="typed-wrapper">
@@ -59,52 +59,52 @@
                     design e funcionalidade.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#collab" class="btn-primary">
-                        <i class="fas fa-paper-plane"></i> Vamos Trabalhar Juntos
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Vamos Trabalhar
                     </a>
-                    <a href="#Projects" class="btn-secondary">
+                    <a href="#projects" class="btn btn-secondary">
                         <i class="fas fa-arrow-down"></i> Ver Projetos
                     </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number">+2</span>
+                        <span class="stat-number">2</span>
                         <span class="stat-label">Anos de Experiência</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">+3</span>
-                        <span class="stat-label">Projetos Em andamento</span>
+                        <span class="stat-number">10</span>
+                        <span class="stat-label">Projetos Completos</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">Adapatavel</span>
+                        <span class="stat-label">Dedicação</span>
                     </div>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="image-wrapper">
                     <div class="image-border"></div>
-                    <img src="esmenio.jpg" alt="Esmenio Vieira" class="profile-photo" onerror="this.src='https://via.placeholder.com/400x400?text=Esmenio+Vieira'">
+                    <img src="esmenio.jpg" alt="Foto de perfil de Esmenio Vieira" class="profile-photo" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=Esmenio+Vieira'">
                     <div class="tech-icons">
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-java"></i>
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-node"></i>
-                        <i class="fas fa-database"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-java" title="Java"></i>
+                        <i class="fab fa-react" title="React"></i>
+                        <i class="fab fa-node" title="Node.js"></i>
+                        <i class="fas fa-database" title="Databases"></i>
                     </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <a href="#about_me">
+            <a href="#about" aria-label="Scroll para próxima seção">
                 <span>Scroll</span>
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
     </section>
 
-    <!-- Sobre Mim -->
-    <section id="about_me">
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag"><i class="fas fa-user-astronaut"></i> Quem sou</span>
@@ -114,9 +114,16 @@
             <div class="about-container">
                 <div class="about-text">
                     <h3>Prazer, sou <span class="highlight">Esmenio Vieira</span></h3>
-                    <p>Sou um desenvolvedor apaixonado por tecnologia, nascido em Angola em 6 de Agosto de 2007. Minha jornada na programação começou aos 15 anos, quando o meu irmão mais velho começou a me ensinar a programar no VisualG.</p>
-                   
-                    <p>A programação veio nos ajudar a resolver problemas para melhorar a algumas coisas no mundo.E com essas tecnologias podemos continuar a avançar cada vez mais</p>
+                    <p>
+                        Sou um desenvolvedor full-stack apaixonado por tecnologia, nascido em Angola. 
+                        Minha jornada na programação começou aos 15 anos e desde então venho desenvolvendo 
+                        soluções inovadoras usando as melhores práticas de desenvolvimento.
+                    </p>
+                    <p>
+                        Especializo-me em criar aplicações web modernas com React no frontend e Java/Node.js 
+                        no backend. Acredito que a programação é uma ferramenta poderosa para resolver problemas 
+                        reais e melhorar vidas.
+                    </p>
                    
                     <div class="about-info-grid">
                         <div class="info-card">
@@ -127,7 +134,7 @@
                             </div>
                         </div>
                         <div class="info-card">
-                            <i class="fas fa-calendar-alt"></i>
+                            <i class="fas fa-briefcase"></i>
                             <div>
                                 <strong>Disponibilidade</strong>
                                 <span>Freelance / Remoto</span>
@@ -141,10 +148,10 @@
                             </div>
                         </div>
                         <div class="info-card">
-                            <i class="fas fa-medal"></i>
+                            <i class="fas fa-star"></i>
                             <div>
-                                <strong>Habilidades em desenvolvimento</strong>
-                                <span>Java, Spring, React</span>
+                                <strong>Especialização</strong>
+                                <span>Full-Stack Development</span>
                             </div>
                         </div>
                     </div>
@@ -152,10 +159,10 @@
                     <div class="about-values">
                         <h4><i class="fas fa-heart"></i> Meus Valores</h4>
                         <div class="values-list">
-                            <span><i class="fas fa-check-circle"></i> Qualidade</span>
-                            <span><i class="fas fa-check-circle"></i> Inovação</span>
-                            <span><i class="fas fa-check-circle"></i> Compromisso</span>
-                            <span><i class="fas fa-check-circle"></i> Transparência</span>
+                            <span><i class="fas fa-check-circle"></i> Qualidade de Código</span>
+                            <span><i class="fas fa-check-circle"></i> Inovação Constante</span>
+                            <span><i class="fas fa-check-circle"></i> Compromisso com Prazos</span>
+                            <span><i class="fas fa-check-circle"></i> Transparência Total</span>
                         </div>
                     </div>
                 </div>
@@ -165,21 +172,20 @@
                         <div class="exp-text">Anos de<br>Experiência</div>
                     </div>
                     <div class="exp-card">
-                        <div class="exp-number">100%</div>
-                        <div class="exp-text">Adaptabilidade<br>Eficiente</div>
+                        <div class="exp-number">10+</div>
+                        <div class="exp-text">Projetos<br>Desenvolvidos</div>
                     </div>
-              
                     <div class="exp-card">
-                        <div class="exp-number">24/7</div>
-                        <div class="exp-text">Suporte<br>Disponível</div>
+                        <div class="exp-number">100%</div>
+                        <div class="exp-text">Satisfação<br>Clientes</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section id="Skill">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag"><i class="fas fa-cogs"></i> Habilidades</span>
@@ -187,129 +193,136 @@
                 <div class="section-line"></div>
             </div>
             <div class="skills-container">
+                <!-- Frontend Skills -->
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-paint-brush"></i>
                         <h3>Front-end</h3>
                     </div>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill="HTML5">
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span>HTML5</span>
                                 <span class="skill-percent">90%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
                         </div>
-                        <div class="skill-item" data-skill="CSS3">
+                        <div class="skill-item">
                             <div class="skill-info">
-                                <span>CSS3</span>
+                                <span>CSS3 / SCSS</span>
                                 <span class="skill-percent">85%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
                         </div>
-                        <div class="skill-item" data-skill="JavaScript">
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span>JavaScript</span>
-                                <span class="skill-percent">60%</span>
+                                <span class="skill-percent">80%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
                         </div>
-                        <div class="skill-item" data-skill="React">
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span>React</span>
                                 <span class="skill-percent">75%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 30%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Backend Skills -->
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-database"></i>
                         <h3>Back-end</h3>
                     </div>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill="Java">
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span>Java</span>
                                 <span class="skill-percent">85%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
                         </div>
-                        <div class="skill-item" data-skill="Spring Boot">
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span>Spring Boot</span>
-                                <span class="skill-percent">50%</span>
+                                <span class="skill-percent">75%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
                         </div>
-                        <div class="skill-item" data-skill="Node.js">
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span>Node.js</span>
-                                <span class="skill-percent">35%</span>
+                                <span class="skill-percent">70%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 70%"></div></div>
                         </div>
-                        <div class="skill-item" data-skill="Python">
+                        <div class="skill-item">
                             <div class="skill-info">
-                                <span>Python</span>
-                                <span class="skill-percent">15%</span>
+                                <span>REST APIs</span>
+                                <span class="skill-percent">85%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 10%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Tools & Databases -->
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-tools"></i>
-                        <h3>Ferramentas & Banco</h3>
+                        <h3>Ferramentas & Banco de Dados</h3>
                     </div>
                     <div class="skills-grid">
-                        <div class="skill-item" data-skill="MySQL">
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span>MySQL</span>
                                 <span class="skill-percent">80%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
                         </div>
-                        <div class="skill-item" data-skill="Git/GitHub">
+                        <div class="skill-item">
                             <div class="skill-info">
-                                <span>Git/GitHub</span>
-                                <span class="skill-percent">30%</span>
+                                <span>PostgreSQL</span>
+                                <span class="skill-percent">75%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 20%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
                         </div>
-                        <div class="skill-item" data-skill="Docker">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git / GitHub</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span>Docker</span>
-                                <span class="skill-percent">60%</span>
+                                <span class="skill-percent">70%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
-                        </div>
-                        <div class="skill-item" data-skill="Figma">
-                            <div class="skill-info">
-                                <span>Lunacy</span>
-                                <span class="skill-percent">40%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 40%"></div></div>
+                            <div class="skill-bar"><div class="skill-progress" style="--progress: 70%"></div></div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Tech Stack Cloud -->
             <div class="tech-stack">
-                <h4>Tecnologias que utilizo e em Processo de Aprendizagem</h4>
+                <h4>Tecnologias que Utilizo</h4>
                 <div class="tech-cloud">
                     <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span> <span>React</span>
-                    <span>Java</span> <span>Spring Boot</span> <span>Node.js</span> <span>Python</span>
-                    <span>MySQL</span> <span>PostgreSQL</span> <span>Git</span> <span>Docker</span>
-                    <span>Figma</span> <span>VS Code</span> <span>IntelliJ</span> <span>Postman</span>
+                    <span>Java</span> <span>Spring Boot</span> <span>Node.js</span> <span>Express</span>
+                    <span>MySQL</span> <span>PostgreSQL</span> <span>MongoDB</span> <span>Git</span>
+                    <span>Docker</span> <span>REST API</span> <span>VS Code</span> <span>Postman</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formação -->
-    <section id="Formation">
+    <!-- Education Section -->
+    <section id="education" class="education-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag"><i class="fas fa-graduation-cap"></i> Educação</span>
@@ -323,8 +336,8 @@
                     </div>
                     <div class="timeline-content">
                         <h3>Ensino Médio</h3>
-                        <span class="timeline-date">2023 - presente</span>
-                        <p>Ensino medio em andamento no Instituto de Telecomunicações.</p>
+                        <span class="timeline-date">2023 - Presente</span>
+                        <p>Instituto de Telecomunicações. Cursando ensino médio com foco em tecnologia.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -334,7 +347,7 @@
                     <div class="timeline-content">
                         <h3>Lógica de Programação</h3>
                         <span class="timeline-date">2022 - 2023</span>
-                        <p>Algoritmos e Logica de programação</p>
+                        <p>Fundações em algoritmos e lógica de programação. Base sólida para desenvolvimento.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -344,7 +357,7 @@
                     <div class="timeline-content">
                         <h3>Desenvolvimento Full-Stack</h3>
                         <span class="timeline-date">2024 - Presente</span>
-                        <p>Aprendizado em formação web e desktopem andamento.</p>
+                        <p>Formação avançada em desenvolvimento web completo: frontend, backend e deploy.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -352,17 +365,17 @@
                         <i class="fas fa-certificate"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3>Em desenvolvimento ...</h3>
-                        <span class="timeline-date">2024</span>
-                        <p>Java, Spring Boot, JavaScript, React.</p>
+                        <h3>Especialização Contínua</h3>
+                        <span class="timeline-date">2024 - Em andamento</span>
+                        <p>Aprendizado constante: Java, Spring Boot, React, JavaScript e arquitetura de software.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projetos -->
-    <section id="Projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio</span>
@@ -373,168 +386,172 @@
                 <div class="project-card">
                     <div class="project-image skeleton-img"></div>
                     <div class="project-content">
-                        <h3>Em desenvolvimento</h3>
-                        <p>Projeto em andamento. Em breve mais informações.</p>
+                        <h3>Sistema de Gestão Web</h3>
+                        <p>Plataforma completa de gestão com dashboard interativo, autenticação e integração de APIs.</p>
                         <div class="project-tech">
                             <span>React</span>
                             <span>Node.js</span>
-                            <span>MySql</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="processing-status"><i class="fas fa-spinner fa-spin"></i> Em breve</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image skeleton-img"></div>
-                    <div class="project-content">
-                        <h3>Em desenvolvimento</h3>
-                        <p>Projeto em andamento. Em breve mais informações.</p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>Spring</span>
                             <span>MySQL</span>
                         </div>
                         <div class="project-links">
-                            <span class="processing-status"><i class="fas fa-spinner fa-spin"></i> Em breve</span>
+                            <a href="#" class="project-link" title="Visualizar projeto">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="#" class="project-link" title="Ver código no GitHub">
+                                <i class="fab fa-github"></i> Código
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-image skeleton-img"></div>
                     <div class="project-content">
-                        <h3>Em desenvolvimento</h3>
-                        <p>Projeto em andamento. Em breve mais informações.</p>
+                        <h3>API RESTful com Spring</h3>
+                        <p>Backend robusto com autenticação JWT, validação de dados e boas práticas de segurança.</p>
                         <div class="project-tech">
-                            <span>Spring</span>
-                            <span>Html5,Css3,Js</span>
-                            <span>Mysql</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
                         </div>
                         <div class="project-links">
-                            <span class="processing-status"><i class="fas fa-spinner fa-spin"></i> Em breve</span>
+                            <a href="#" class="project-link" title="Documentação">
+                                <i class="fas fa-book"></i> Docs
+                            </a>
+                            <a href="#" class="project-link" title="Ver código no GitHub">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image skeleton-img"></div>
+                    <div class="project-content">
+                        <h3>Aplicação E-commerce</h3>
+                        <p>Plataforma de vendas com carrinho, pagamento integrado e painel administrativo.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Java</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Visualizar projeto">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="#" class="project-link" title="Ver código no GitHub">
+                                <i class="fab fa-github"></i> Código
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="projects-cta">
-                <a href="#collab" class="btn-primary"><i class="fas fa-comment"></i> Quer desenvolver um projeto?</a>
+                <p>Tem mais projetos interessantes no meu GitHub</p>
+                <a href="https://github.com/Esmenio" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Visitar GitHub
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Colaboração -->
-    <section id="collab">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-handshake"></i> Parceria</span>
-                <h2>Vamos criar algo <span class="gradient-text">incrível</span> juntos?</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="collab-wrapper">
-                <div class="collab-info-card">
-                    <i class="fas fa-chalkboard-user"></i>
-                    <h3>Como funciona?</h3>
-                    <p>Preencha o formulário ao lado com sua ideia. Entrarei em contato em até 24h para discutirmos os próximos passos.</p>
-                    <div class="benefits">
-                        <div><i class="fas fa-check-circle"></i> Orçamento sem compromisso</div>
-                        <div><i class="fas fa-check-circle"></i> Planejamento detalhado</div>
-                        <div><i class="fas fa-check-circle"></i> Código limpo e documentado</div>
-                        <div><i class="fas fa-check-circle"></i> Suporte pós-entrega</div>
-                    </div>
-                </div>
-                <div class="collab-form-card">
-                    <form id="projectForm">
-                        <div class="form-row">
-                            <div class="input-group">
-                                <label><i class="fas fa-user"></i> Nome completo</label>
-                                <input type="text" id="nome" placeholder="Seu nome" required>
-                            </div>
-                            <div class="input-group">
-                                <label><i class="fas fa-envelope"></i> E-mail</label>
-                                <input type="email" id="email" placeholder="seu@email.com" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="input-group">
-                                <label><i class="fas fa-phone"></i> Telefone/WhatsApp</label>
-                                <input type="tel" id="telefone" placeholder="+244 900 000 000">
-                            </div>
-                            <div class="input-group">
-                                <label><i class="fas fa-code"></i> Área de interesse</label>
-                                <select id="habilidade">
-                                    <option value="">Selecione</option>
-                                    <option>Front-end</option>
-                                    <option>Back-end</option>
-                                    <option>Full-Stack</option>
-                                    <option>UI/UX Design</option>
-                                    <option>Consultoria</option>
-                                    <option>Outro</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="input-group full-width">
-                            <label><i class="fas fa-file-alt"></i> Descrição do projeto</label>
-                            <textarea id="descricao" rows="4" placeholder="Conte-me sobre sua ideia, objetivos e prazos..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar proposta</button>
-                        <div id="formMessage" class="form-message"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="Find_Me">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag"><i class="fas fa-address-card"></i> Contato</span>
-                <h2>Onde me <span class="gradient-text">encontrar</span></h2>
+                <h2>Vamos <span class="gradient-text">Conversar</span></h2>
                 <div class="section-line"></div>
             </div>
-            <div class="contact-grid">
-                <a href="https://github.com/Esmenio" target="_blank" class="contact-card github">
-                    <i class="fab fa-github"></i>
-                    <div>
-                        <h4>GitHub</h4>
-                        <p>/Esmenio</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-form-card">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Nome Completo *</label>
+                            <input type="text" id="contactName" name="name" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">E-mail *</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="seu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Telefone (Opcional)</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="+244 900 000 000">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Assunto *</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="freelance">Projeto Freelance</option>
+                                <option value="full-time">Oportunidade Full-Time</option>
+                                <option value="partnership">Parceria / Colaboração</option>
+                                <option value="consultation">Consultoria</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="contactMessage">Mensagem *</label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Conte-me sobre seu projeto ou proposta..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <a href="mailto:esmenioalberto@gmail.com">esmenioalberto@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/244953186396" target="_blank" rel="noopener noreferrer">+244 953 186 396</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <span>Luanda, Angola</span>
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <a href="https://linkedin.com/in/esmenio" target="_blank" class="contact-card linkedin">
-                    <i class="fab fa-linkedin"></i>
-                    <div>
-                        <h4>LinkedIn</h4>
-                        <p>/Esmenio Alberto</p>
+
+                    <div class="social-links">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/Esmenio" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/esmenio" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/esmenio.dev" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/244953186396" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="social-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
                     </div>
-                </a>
-                <a href="https://instagram.com/esmenio.dev" target="_blank" class="contact-card instagram">
-                    <i class="fab fa-instagram"></i>
-                    <div>
-                        <h4>Instagram</h4>
-                        <p>@esmenio_vieira_dante</p>
-                    </div>
-                </a>
-                <a href="https://facebook.com/Esmenio Alberto" target="_blank" class="contact-card facebook">
-                    <i class="fab fa-facebook"></i>
-                    <div>
-                        <h4>Facebook</h4>
-                        <p>/Esmenio Alberto</p>
-                    </div>
-                </a>
-                <a href="mailto:esmenio@gmail.com" class="contact-card email">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>E-mail</h4>
-                        <p>esmenioalberto@gmail.com</p>
-                    </div>
-                </a>
-                <a href="https://wa.me/244953186396" target="_blank" class="contact-card whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    <div>
-                        <h4>WhatsApp</h4>
-                        <p>+244 953186396</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
@@ -542,33 +559,36 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="footer-brand">
-                <div class="footer-logo">&lt;EV/&gt;</div>
-                <p>Transformando ideias em código.<br>Entregando soluções que fazem a diferença.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Navegação</h4>
-                <a href="#Home">Início</a>
-                <a href="#about_me">Sobre</a>
-                <a href="#Skill">Skills</a>
-                <a href="#Formation">Formação</a>
-                <a href="#Projects">Projetos</a>
-                <a href="#collab">Colab</a>
-            </div>
-            <div class="footer-social">
-                <h4>Redes Sociais</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">&lt;EV/&gt;</div>
+                    <p>Transformando ideias em código.<br>Entregando soluções que fazem a diferença.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação Rápida</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Educação</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Conecte-se</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Esmenio" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/esmenio" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/esmenio.dev" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/244953186396" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Esmenio Vieira. Todos os direitos reservados.</p>
-            <p class="footer-heart">Feito com <i class="fas fa-heart"></i> em Angola</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Esmenio Vieira. Todos os direitos reservados.</p>
+                <p class="footer-heart">Feito com <i class="fas fa-heart"></i> em Angola</p>
+            </div>
         </div>
     </footer>
 
